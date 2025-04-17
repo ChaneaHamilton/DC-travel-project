@@ -10,11 +10,10 @@ body {
 
 .grid {
   display: grid;
-
   gap: 64px;
 }
 .img-responsive {
-  max-width: 90%;
+  width: 100%;
 }
 .grid-2-columns {
   grid-template-columns: 1fr 1fr;
@@ -27,6 +26,13 @@ body {
 }
 .grid-3-columns {
   grid-template-columns: 1fr 1fr 1fr;
+}
+.embed {
+  width: 100%;
+  aspect-ratio: 1/1;
+}
+.card-header .grid {
+  gap: 0;
 }
 section {
   max-width: 100%;
@@ -220,5 +226,11 @@ footer a {
 
   section {
     padding: 30px;
+  }
+  .card-header img {
+    display: none;
+  }
+  .embed {
+    aspect-ratio: 16/9;
   }
 }
